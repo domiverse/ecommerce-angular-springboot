@@ -1,0 +1,11 @@
+<p-carousel [value]="banners" [numVisible]="1" [numScroll]="1" [circular]="true" [autoplayInterval]="5000">
+    <ng-template let-banner pTemplate="item">
+      <div class="banner">
+        <img [src]="banner.image" alt="Banner" class="w-100">
+        <div class="banner-text">
+          <h1>{{ banner.title }}</h1>
+          <p>{{ banner.subtitle }}</p>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
