@@ -1,0 +1,29 @@
+@use '../../../styles/variables' as *;
+
+.footer {
+    background: $background-color;
+    text-align: center;
+    padding: 20px;
+  
+    p {
+      margin: 0;
+      font-size: 14px;
+      color: $text-color;
+    }
+  
+    .social-icons {
+      margin-top: 10px;
+  
+      i {
+        font-size: 20px;
+        margin: 0 10px;
+        color: $primary-color;
+        cursor: pointer;
+  
+        &:hover {
+          color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+  

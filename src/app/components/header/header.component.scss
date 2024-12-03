@@ -1,0 +1,41 @@
+.header {
+    background: url('assets/banner.jpg') no-repeat center center/cover;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .overlay {
+      text-align: center;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 5px;
+  
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
+      }
+  
+      p {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+  
+      .btn {
+        background: $primary-color;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+  
+        &:hover {
+          background: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+  

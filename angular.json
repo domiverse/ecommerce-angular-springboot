@@ -98,14 +98,20 @@
               }
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
-              "node_modules/primeng/resources/primeng.min.css"
+              "src/styles.scss"
             ],
-            "scripts": []
+                    
+            "scripts": [],
+            
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/styles"]
+            }
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
