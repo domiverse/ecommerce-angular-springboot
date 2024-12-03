@@ -12,13 +12,19 @@ import { MenubarModule } from 'primeng/menubar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'primeng/carousel';
 import { CardModule } from 'primeng/card';
+import { HomeComponent } from './components/home/home.component';
+import { ShopComponent } from './components/shop/shop.component';
+import { ContactComponent } from './components/contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HeaderComponent,
     ProductGridComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    ShopComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -33,3 +39,4 @@ import { CardModule } from 'primeng/card';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+  

@@ -1,1 +1,40 @@
-@import "node_modules/primeicons/primeicons.css";
+@use '../../../styles/variables' as *;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: $background-color;
+    color: $primary-color;
+  
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: $primary-color;
+    }
+  
+    .menu {
+      display: flex;
+      list-style: none;
+  
+      li {
+        margin: 0 15px;
+  
+        a {
+          text-decoration: none;
+          color: $text-color;
+          font-size: 16px;
+  
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  
+    .cart {
+      font-size: 20px;
+      color: $primary-color;
+      cursor: pointer;
+    }
+  }

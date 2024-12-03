@@ -1,1 +1,11 @@
-<p>product-grid works!</p>
+<div class="grid">
+    <div *ngFor="let product of products" class="col-12 md:col-4 lg:col-3">
+      <p-card [header]="product.name" [subheader]="product.price">
+        <img [src]="product.image" alt="{{ product.name }}" class="w-100">
+        <ng-template pTemplate="footer">
+          <button pButton type="button" label="Add to Cart" icon="pi pi-shopping-cart"></button>
+        </ng-template>
+      </p-card>
+    </div>
+  </div>
+  
